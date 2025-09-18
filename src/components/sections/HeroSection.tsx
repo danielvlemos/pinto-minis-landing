@@ -53,8 +53,8 @@ const HeroSection = () => {
                 Começar Agora
                 <ChevronRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                Ver Prévia Grátis
+              <Button variant="secondary" size="lg" className="text-lg px-8 py-4">
+                Ver Conteúdo Completo
               </Button>
             </div>
             
