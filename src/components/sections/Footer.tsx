@@ -1,14 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { 
-  Mail, 
-  Shield, 
-  Clock, 
-  Heart,
-  Instagram,
-  Youtube,
-  Facebook
-} from "lucide-react";
+import { Mail, FileText, Download, Heart, Instagram, Youtube, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -24,27 +16,25 @@ const Footer = () => {
               <h3 className="text-2xl font-bold text-foreground">Pinto Minis</h3>
             </div>
             <p className="text-muted-foreground">
-              Transforme suas miniaturas em obras de arte com técnicas profissionais. 
-              Mais de 2.500 alunos já descobriram o poder da pintura.
+              Um guia digital em PDF para quem quer começar a pintar miniaturas
+              do jeito certo, desde a primeira peça.
             </p>
-            <div className="flex items-center gap-2">
-              <Badge variant="secondary" className="px-3 py-1">
-                ⭐ 4.9/5 estrelas
-              </Badge>
-            </div>
+            <Badge variant="secondary" className="px-3 py-1">
+              📘 E-book para iniciantes
+            </Badge>
           </div>
-          
+
           {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="font-bold text-foreground">Links Rápidos</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#curso" className="hover:text-primary transition-colors">Sobre o Curso</a></li>
-              <li><a href="#conteudo" className="hover:text-primary transition-colors">Conteúdo</a></li>
-              <li><a href="#depoimentos" className="hover:text-primary transition-colors">Depoimentos</a></li>
-              <li><a href="#preco" className="hover:text-primary transition-colors">Preço</a></li>
+              <li><a href="#aprender" className="hover:text-primary transition-colors">O que você vai aprender</a></li>
+              <li><a href="#autor" className="hover:text-primary transition-colors">Sobre o autor</a></li>
+              <li><a href="#comprar" className="hover:text-primary transition-colors">Comprar o e-book</a></li>
+              <li><a href="#curso-completo" className="hover:text-primary transition-colors">Curso completo</a></li>
             </ul>
           </div>
-          
+
           {/* Support */}
           <div className="space-y-4">
             <h4 className="font-bold text-foreground">Suporte</h4>
@@ -54,34 +44,37 @@ const Footer = () => {
                 <span>contato@pintominis.com</span>
               </li>
               <li className="flex items-center gap-2">
-                <Shield className="w-4 h-4" />
-                <span>Garantia de 30 dias</span>
+                <FileText className="w-4 h-4" />
+                <span>Formato PDF</span>
               </li>
               <li className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>Acesso vitalício</span>
+                <Download className="w-4 h-4" />
+                <span>Download imediato</span>
               </li>
             </ul>
           </div>
-          
+
           {/* Social */}
           <div className="space-y-4">
             <h4 className="font-bold text-foreground">Redes Sociais</h4>
             <div className="flex gap-3">
-              <a 
-                href="#" 
+              <a
+                href="#"
+                aria-label="Instagram"
                 className="w-10 h-10 bg-muted rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
+                aria-label="YouTube"
                 className="w-10 h-10 bg-muted rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Youtube className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
+                aria-label="Facebook"
                 className="w-10 h-10 bg-muted rounded-xl flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Facebook className="w-5 h-5" />
@@ -92,14 +85,12 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        
+
         <Separator className="my-8" />
-        
+
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <span>© 2024 Pinto Minis. Todos os direitos reservados.</span>
-          </div>
+          <span>© 2026 Pinto Minis. Todos os direitos reservados.</span>
           <div className="flex items-center gap-1">
             <span>Feito com</span>
             <Heart className="w-4 h-4 text-destructive fill-destructive" />
