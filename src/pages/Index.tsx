@@ -1,8 +1,9 @@
 import HeroSection from "@/components/sections/HeroSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
-import CourseContentSection from "@/components/sections/CourseContentSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import WhatYouLearnSection from "@/components/sections/WhatYouLearnSection";
+import AboutAuthorSection from "@/components/sections/AboutAuthorSection";
 import PricingSection from "@/components/sections/PricingSection";
+import NewsletterSection from "@/components/sections/NewsletterSection";
 import Footer from "@/components/sections/Footer";
 
 const Index = () => {
@@ -10,9 +11,10 @@ const Index = () => {
     <main className="min-h-screen">
       <HeroSection />
       <BenefitsSection />
-      <CourseContentSection />
-      <TestimonialsSection />
+      <WhatYouLearnSection />
+      <AboutAuthorSection />
       <PricingSection />
+      <NewsletterSection />
       <Footer />
     </main>
   );
