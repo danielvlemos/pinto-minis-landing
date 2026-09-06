@@ -1,28 +1,32 @@
-# pinto-minis-landing
+# Pinto Minis
 
-crie uma landing page de um curso que ensina a pintar miniaturas. Essa landing page terá a função de apresentar o curso e ser a página onde a pessoa clica para comprar o curso de fato!
+Landing page do e-book "Pinto Minis: Guia para iniciantes na pintura de miniaturas".
+Apresenta o material e é a página onde a pessoa compra o e-book em PDF.
 
-O nome do "Projeto" até então é Pinto Minis.
+**Site no ar**: https://pintominis.danielvlemos.com.br
 
-This project was built with [Lovable](https://lovable.dev).
+## Stack
 
-**Live app**: https://pinto-minis-landing.lovable.app
+- Vite + React + TypeScript
+- Tailwind CSS + shadcn/ui
 
-## Build with Lovable
+## Rodando localmente
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/b8b1a740-8f09-41ec-ad79-a0498c3a2b90).
+Precisa de Node.js e npm instalados.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+\`\`\`sh
+git clone https://github.com/danielvlemos/pinto-minis-landing.git
+cd pinto-minis-landing
+npm install
 npm run dev
-```
+\`\`\`
+
+## Deploy
+
+O site roda em produção via Easypanel, num VPS próprio (Contabo), usando Nixpacks
+pra build e \`npx serve\` pra servir os arquivos estáticos gerados em \`dist\`.
+
+Um webhook do GitHub dispara o redeploy automaticamente a cada push na branch
+\`main\`, sem precisar clicar em nada manualmente no painel.
+
+teste
